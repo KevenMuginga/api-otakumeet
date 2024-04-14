@@ -1,0 +1,15 @@
+C:\Users\Qiu\source\repos\OtakuMeet\CoreShared\bin\Debug\net8.0\CoreShared.deps.json
+C:\Users\Qiu\source\repos\OtakuMeet\CoreShared\bin\Debug\net8.0\CoreShared.dll
+C:\Users\Qiu\source\repos\OtakuMeet\CoreShared\bin\Debug\net8.0\CoreShared.pdb
+C:\Users\Qiu\source\repos\OtakuMeet\CoreShared\obj\Debug\net8.0\CoreShared.csproj.AssemblyReference.cache
+C:\Users\Qiu\source\repos\OtakuMeet\CoreShared\obj\Debug\net8.0\CoreShared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Qiu\source\repos\OtakuMeet\CoreShared\obj\Debug\net8.0\CoreShared.AssemblyInfoInputs.cache
+C:\Users\Qiu\source\repos\OtakuMeet\CoreShared\obj\Debug\net8.0\CoreShared.AssemblyInfo.cs
+C:\Users\Qiu\source\repos\OtakuMeet\CoreShared\obj\Debug\net8.0\CoreShared.csproj.CoreCompileInputs.cache
+C:\Users\Qiu\source\repos\OtakuMeet\CoreShared\obj\Debug\net8.0\CoreShared.dll
+C:\Users\Qiu\source\repos\OtakuMeet\CoreShared\obj\Debug\net8.0\refint\CoreShared.dll
+C:\Users\Qiu\source\repos\OtakuMeet\CoreShared\obj\Debug\net8.0\CoreShared.pdb
+C:\Users\Qiu\source\repos\OtakuMeet\CoreShared\obj\Debug\net8.0\ref\CoreShared.dll
+C:\Users\Qiu\source\repos\OtakuMeet\CoreShared\bin\Debug\net8.0\Core.dll
+C:\Users\Qiu\source\repos\OtakuMeet\CoreShared\bin\Debug\net8.0\Core.pdb
+C:\Users\Qiu\source\repos\OtakuMeet\CoreShared\obj\Debug\net8.0\CoreShared.csproj.CopyComplete

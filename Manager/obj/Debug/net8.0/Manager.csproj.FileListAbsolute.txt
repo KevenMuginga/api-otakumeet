@@ -1,0 +1,17 @@
+C:\Users\Qiu\source\repos\OtakuMeet\Manager\bin\Debug\net8.0\Manager.deps.json
+C:\Users\Qiu\source\repos\OtakuMeet\Manager\bin\Debug\net8.0\Manager.dll
+C:\Users\Qiu\source\repos\OtakuMeet\Manager\bin\Debug\net8.0\Manager.pdb
+C:\Users\Qiu\source\repos\OtakuMeet\Manager\bin\Debug\net8.0\Core.dll
+C:\Users\Qiu\source\repos\OtakuMeet\Manager\bin\Debug\net8.0\CoreShared.dll
+C:\Users\Qiu\source\repos\OtakuMeet\Manager\bin\Debug\net8.0\CoreShared.pdb
+C:\Users\Qiu\source\repos\OtakuMeet\Manager\bin\Debug\net8.0\Core.pdb
+C:\Users\Qiu\source\repos\OtakuMeet\Manager\obj\Debug\net8.0\Manager.csproj.AssemblyReference.cache
+C:\Users\Qiu\source\repos\OtakuMeet\Manager\obj\Debug\net8.0\Manager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Qiu\source\repos\OtakuMeet\Manager\obj\Debug\net8.0\Manager.AssemblyInfoInputs.cache
+C:\Users\Qiu\source\repos\OtakuMeet\Manager\obj\Debug\net8.0\Manager.AssemblyInfo.cs
+C:\Users\Qiu\source\repos\OtakuMeet\Manager\obj\Debug\net8.0\Manager.csproj.CoreCompileInputs.cache
+C:\Users\Qiu\source\repos\OtakuMeet\Manager\obj\Debug\net8.0\Manager.csproj.CopyComplete
+C:\Users\Qiu\source\repos\OtakuMeet\Manager\obj\Debug\net8.0\Manager.dll
+C:\Users\Qiu\source\repos\OtakuMeet\Manager\obj\Debug\net8.0\refint\Manager.dll
+C:\Users\Qiu\source\repos\OtakuMeet\Manager\obj\Debug\net8.0\Manager.pdb
+C:\Users\Qiu\source\repos\OtakuMeet\Manager\obj\Debug\net8.0\ref\Manager.dll
