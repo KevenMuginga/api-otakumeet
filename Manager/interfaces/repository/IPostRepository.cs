@@ -10,7 +10,7 @@ namespace Manager.interfaces.repository
 {
     public interface IPostRepository
     {
-        Task AddEstarelaPostAsync(AddEstrela addEstrela);
+        Task<Post> AddeRemoveEstarelaPostAsync(AddEstrela addEstrela);
         Task DeleteAsync(int Id);
         Task<ICollection<Post>> GetAllAsync();
         Task<ICollection<Post>> GetAllPostOfPersonagesFollowingAsync(int myId);

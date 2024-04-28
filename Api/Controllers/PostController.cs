@@ -63,9 +63,9 @@ namespace Api.Controllers
 
         // POST api/<PersonagemController>
         [HttpPost("AddEstrela")]
-        public async Task AddEstrela(AddEstrela addEstrela)
+        public async Task<IActionResult> AddEstrela(AddEstrela addEstrela)
         {
-            await _manager.AddEstarelaPostAsync(addEstrela);
+            return Ok(await _manager.AddeRemoveEstarelaPostAsync(addEstrela));
         }
 
         // PUT api/<PersonagemController>/5

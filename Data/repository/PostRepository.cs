@@ -122,13 +122,34 @@ namespace Data.repository
             post.Estado = estadoConsultado;
         }
 
-        public async Task AddEstarelaPostAsync(AddEstrela addEstrela)
+        public async Task<Post> AddeRemoveEstarelaPostAsync(AddEstrela addEstrela)
         {
-            var post = await _context.Post.FindAsync(addEstrela.PostId);
-            var me = await _context.Personagem.FindAsync(addEstrela.MyId);
-            post.Estrelas.Add(me);
+            var post = await _context.Post
+                .Include(p => p.Estrelas)
+                .Include(p => p.Comentarios)
+                .SingleOrDefaultAsync(p => p.Id == addEstrela.PostId);
 
-            await _context.SaveChangesAsync();
+            var me = await _context.Personagem.FindAsync(addEstrela.MyId);
+
+            
+            if (post != null && me != null)
+            {
+                if (post.Estrelas.Contains(me))
+                {
+                    post.Estrelas.Remove(me);
+                    _context.SaveChanges();
+                    return post;
+                }
+                else
+                {
+                    post.Estrelas.Add(me);
+                    _context.SaveChanges();
+                    return post;
+
+                }
+            }
+            return null;
+
         }
         public async Task RemoveEstrelaAsync(AddEstrela addEstrela)
         {

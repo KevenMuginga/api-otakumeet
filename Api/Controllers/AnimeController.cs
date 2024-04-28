@@ -39,7 +39,7 @@ namespace Api.Controllers
         }
 
         // PUT api/<AnimeController>/5
-        [HttpPut("{id}")]
+        [HttpPut]
         public async Task<IActionResult> PutAsync(AlterarAnime alterarAnime)
         {
             return Ok(await _manager.PutAnimeAsync(alterarAnime));

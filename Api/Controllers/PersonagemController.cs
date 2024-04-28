@@ -70,7 +70,7 @@ namespace Api.Controllers
             await _manager.FollowPersonagemAsync(follow);
         }
 
-        [HttpDelete("StopFollow")]
+        [HttpPut("StopFollow")]
         public async Task UnFollow(Follow follow)
         {
             await _manager.StopFollowPersonagemAsync(follow);

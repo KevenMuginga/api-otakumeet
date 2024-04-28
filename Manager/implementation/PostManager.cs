@@ -59,9 +59,9 @@ namespace Manager.implementation
             return await _repository.PostAsync(item);
         }
 
-        public async Task AddEstarelaPostAsync(AddEstrela addEstrela)
+        public async Task<Post> AddeRemoveEstarelaPostAsync(AddEstrela addEstrela)
         {
-            await _repository.AddEstarelaPostAsync(addEstrela);
+            return await _repository.AddeRemoveEstarelaPostAsync(addEstrela);
         }
 
         public async Task RemoveEstrelaAsync(AddEstrela addEstrela)

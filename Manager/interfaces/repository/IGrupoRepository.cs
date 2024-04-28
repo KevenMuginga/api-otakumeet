@@ -11,6 +11,7 @@ namespace Manager.interfaces.repository
     {
         Task DeleteAsync(int id);
         Task<ICollection<Grupo>> GetAllByPersonagemIdAsync(int id);
+        Task<ICollection<Grupo>> GetByGrupoAsync(Grupo chat);
         Task<Grupo> GetByIdAsync(int Id);
         Task<ICollection<Grupo>> GetByPersonagesAsync(Grupo chat);
         Task<Grupo> PostAsync(Grupo chat);

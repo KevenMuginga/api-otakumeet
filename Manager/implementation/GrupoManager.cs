@@ -32,6 +32,12 @@ namespace Manager.implementation
             return await _repository.GetAllByPersonagemIdAsync(id);
         }
 
+        public async Task<ICollection<Grupo>> GetByGrupoAsync(NovoGrupo novoGrupo)
+        {
+            var grupo = _mapper.Map<Grupo>(novoGrupo);
+            return await _repository.GetByGrupoAsync(grupo);
+        }
+
         public async Task<Grupo> PostAsync(NovoGrupo novoChat)
         {
             var chat = _mapper.Map<Grupo>(novoChat);

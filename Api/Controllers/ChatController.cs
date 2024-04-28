@@ -42,6 +42,13 @@ namespace Api.Controllers
             return Ok(await _manager.get(chat));
         }
 
+        // GET api/<PersonagemController>/5
+        [HttpPost("Grupo")]
+        public async Task<IActionResult> GetByGrupoAsync(NovoGrupo chat)
+        {
+            return Ok(await _manager.GetByGrupoAsync(chat));
+        }
+
 
         // POST api/<PersonagemController>
         [HttpPost]
@@ -51,7 +58,7 @@ namespace Api.Controllers
         }
 
         // Delete api/<PersonagemController>
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
             await _manager.DeleteAsync(id);

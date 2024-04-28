@@ -24,6 +24,7 @@ namespace Data.repository
         public async Task<ICollection<Personagem>> GetAllAsync()
         {
             return await context.Personagem
+                .Where(p => p.Nome != "Administrador")
                 .Include(p => p.Anime)
                 .AsNoTracking()
                 .ToListAsync();
@@ -32,7 +33,7 @@ namespace Data.repository
         public async Task<ICollection<Personagem>> GetAllByAnimeWithoutUserAsync(int animeId)
         {
             return await context.Personagem
-                .Where(a => a.AnimeId == animeId && a.Usuario == null)
+                .Where(a => a.AnimeId == animeId && a.Usuario == null && a.Nome != "Administrador")
                 .Include(p => p.Anime)
                 .AsNoTracking()
                 .ToListAsync();
@@ -44,7 +45,7 @@ namespace Data.repository
             var me = await context.Personagem.FindAsync(myId);
 
             return await context.Personagem
-                .Where(a => a.Seguidores.Contains(me) && a.Id != myId)
+                .Where(a => a.Seguidores.Contains(me) && a.Id != myId && a.Nome != "Administrador")
                 .Include(p => p.Anime)
                 .AsNoTracking()
                 .ToListAsync();
@@ -56,7 +57,7 @@ namespace Data.repository
             var me = await context.Personagem.FindAsync(myId);
 
             return following = await context.Personagem
-                .Where(a => !a.Seguidores.Contains(me) && a.Id != myId)
+                .Where(a => !a.Seguidores.Contains(me) && a.Id != myId && a.Nome != "Administrador")
                 .Include(p => p.Anime)
                 .AsNoTracking()
                 .ToListAsync();
@@ -65,7 +66,7 @@ namespace Data.repository
         public async Task<ICollection<Personagem>> GetAllByAnimeAsync(int animeId)
         {
             return await context.Personagem
-                .Where(a => a.AnimeId == animeId)
+                .Where(a => a.AnimeId == animeId && a.Nome != "Administrador")
                 .Include(p => p.Anime)
                 .AsNoTracking()
                 .ToListAsync();
@@ -147,8 +148,8 @@ namespace Data.repository
 
         public async Task StopFollowPersonagemAsync(Follow follow)
         {
-            var persnoagem = await context.Personagem.FindAsync(follow.PersonagemId);
-            var me = await context.Personagem.FindAsync(follow.MyId);
+            var persnoagem = await context.Personagem.Include(p => p.Seguidores).SingleOrDefaultAsync(p => p.Id == follow.PersonagemId);
+            var me = await context.Personagem.Include(p => p.Seguidores).SingleOrDefaultAsync(p => p.Id == follow.MyId);
             persnoagem.Seguidores.Remove(me);
 
             await context.SaveChangesAsync();

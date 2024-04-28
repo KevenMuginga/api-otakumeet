@@ -10,7 +10,7 @@ namespace Manager.interfaces.manager
 {
     public interface IPostManager
     {
-        Task AddEstarelaPostAsync(AddEstrela addEstrela);
+        Task<Post> AddeRemoveEstarelaPostAsync(AddEstrela addEstrela);
         Task DeleteAsync(int id);
         Task<ICollection<Post>> GetAllAsync();
         Task<ICollection<Post>> GetAllPostByPersonagemAsync(int id);

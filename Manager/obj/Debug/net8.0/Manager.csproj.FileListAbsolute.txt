@@ -15,3 +15,4 @@ C:\Users\Qiu\source\repos\OtakuMeet\Manager\obj\Debug\net8.0\Manager.dll
 C:\Users\Qiu\source\repos\OtakuMeet\Manager\obj\Debug\net8.0\refint\Manager.dll
 C:\Users\Qiu\source\repos\OtakuMeet\Manager\obj\Debug\net8.0\Manager.pdb
 C:\Users\Qiu\source\repos\OtakuMeet\Manager\obj\Debug\net8.0\ref\Manager.dll
+C:\Users\Qiu\source\repos\OtakuMeet\Manager\obj\Debug\net8.0\Manager.sourcelink.json

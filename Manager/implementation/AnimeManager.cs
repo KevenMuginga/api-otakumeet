@@ -43,6 +43,7 @@ namespace Manager.implementation
         public async Task<Anime> PutAnimeAsync(AlterarAnime alterarAnime)
         {
             var anime = _mapper.Map<Anime>(alterarAnime);
+            anime.ImgUrl = await uploadImage(_mapper.Map<NovoAnime>(alterarAnime));
             return await _animeRepository.PutAsync(anime);
         }
 

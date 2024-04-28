@@ -149,3 +149,4 @@ C:\Users\Qiu\source\repos\OtakuMeet\Api\obj\Debug\net8.0\Api.genruntimeconfig.ca
 C:\Users\Qiu\source\repos\OtakuMeet\Api\obj\Debug\net8.0\ref\Api.dll
 C:\Users\Qiu\source\repos\OtakuMeet\Api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\Qiu\source\repos\OtakuMeet\Api\bin\Debug\net8.0\System.Net.WebSockets.WebSocketProtocol.dll
+C:\Users\Qiu\source\repos\OtakuMeet\Api\obj\Debug\net8.0\Api.sourcelink.json

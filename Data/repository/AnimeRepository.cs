@@ -21,6 +21,7 @@ namespace Data.repository
         public async Task<ICollection<Anime>> GetAllAsync()
         {
             return await context.Anime
+                .Where(a => a.Nome != "Administrador")
                 .Include(a => a.Personagens)
                 .AsNoTracking()
                 .ToListAsync();
@@ -50,14 +51,16 @@ namespace Data.repository
                 return null;
             }
 
-            animeConsultado = anime;
+            animeConsultado.Nome = anime.Nome;
+            animeConsultado.Autor = anime.Autor;
+            animeConsultado.ImgUrl = anime.ImgUrl;
 
-            context.Attach(animeConsultado);
-            context.Anime.Entry(animeConsultado).Property(a => a.Nome).IsModified = true;
-            context.Anime.Entry(animeConsultado).Property(a => a.Autor).IsModified = true;
-            context.Anime.Entry(animeConsultado).Property(a => a.ImgUrl).IsModified = true;
+            //context.Attach(animeConsultado);
+            //context.Anime.Entry(animeConsultado).Property(a => a.Nome).IsModified = true;
+            //context.Anime.Entry(animeConsultado).Property(a => a.Autor).IsModified = true;
+            //context.Anime.Entry(animeConsultado).Property(a => a.ImgUrl).IsModified = true;
 
-            await context.SaveChangesAsync();
+            context.SaveChanges();
             return anime;
         }
 

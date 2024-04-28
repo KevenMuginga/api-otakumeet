@@ -16,6 +16,8 @@ namespace Manager.mapping.anime
             CreateMap<Anime, NovoAnime>().ReverseMap();
             CreateMap<Anime, AnimeView>().ReverseMap();
             CreateMap<Anime, NovoAnime>().ReverseMap();
+            CreateMap<Anime, AlterarAnime>().ReverseMap();
+            CreateMap<AlterarAnime, NovoAnime>().ReverseMap();
         }
     }
 }

@@ -19,3 +19,4 @@ C:\Users\Qiu\source\repos\OtakuMeet\Data\obj\Debug\net8.0\refint\Data.dll
 C:\Users\Qiu\source\repos\OtakuMeet\Data\obj\Debug\net8.0\Data.pdb
 C:\Users\Qiu\source\repos\OtakuMeet\Data\obj\Debug\net8.0\Data.genruntimeconfig.cache
 C:\Users\Qiu\source\repos\OtakuMeet\Data\obj\Debug\net8.0\ref\Data.dll
+C:\Users\Qiu\source\repos\OtakuMeet\Data\obj\Debug\net8.0\Data.sourcelink.json

@@ -22,8 +22,19 @@ namespace Data.repository
         {
             return await context.Grupo
                 .Where(c => c.PrimeiraPersonagemId == chat.PrimeiraPersonagemId && c.SegundaPersonagemId == chat.SegundaPersonagemId)
-                .Include(a => a.PrimeiraPersonagemId)
-                .Include(a => a.SegundaPersonagemId)
+                .Include(a => a.PrimeiraPersonagem)
+                .Include(a => a.SegundaPersonagem)
+                .Include(a => a.Mensagens)
+                .AsNoTracking()
+                .ToListAsync();
+        }
+
+        public async Task<ICollection<Grupo>> GetByGrupoAsync(Grupo chat)
+        {
+            return await context.Grupo
+                .Where(c => (c.PrimeiraPersonagemId == chat.PrimeiraPersonagemId || c.PrimeiraPersonagemId == chat.SegundaPersonagemId) && (c.SegundaPersonagemId == chat.SegundaPersonagemId || c.SegundaPersonagemId == chat.PrimeiraPersonagemId))
+                .Include(a => a.PrimeiraPersonagem)
+                .Include(a => a.SegundaPersonagem)
                 .Include(a => a.Mensagens)
                 .AsNoTracking()
                 .ToListAsync();

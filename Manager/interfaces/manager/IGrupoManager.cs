@@ -13,6 +13,7 @@ namespace Manager.interfaces.manager
         Task DeleteAsync(int id);
         Task<ICollection<Grupo>> get(Grupo chat);
         Task<ICollection<Grupo>> GetAllByPersonagemIdAsync(int id);
+        Task<ICollection<Grupo>> GetByGrupoAsync(NovoGrupo grupo);
         Task<Grupo> GetByIdAsync(int id);
         Task<Grupo> PostAsync(NovoGrupo novoChat);
     }
